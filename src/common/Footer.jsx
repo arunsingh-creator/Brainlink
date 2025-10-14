@@ -19,9 +19,9 @@ export default function Footer() {
           <div className="flex flex-col space-y-2">
             <h3 className="font-semibold text-white mb-2 font-outfit">Quick Links</h3>
             <a href="/" className="hover:text-blue-500 font-outfit">Home</a>
-            <a href="#" className="hover:text-blue-500 font-outfit">Services</a>
+            <a href="/service" className="hover:text-blue-500 font-outfit">Services</a>
             <a href="/pricing" className="hover:text-blue-500 font-outfit">Pricing</a>
-            <a href="#" className="hover:text-blue-500 font-outfit">Contact</a>
+            <a href="/contact" className="hover:text-blue-500 font-outfit">Contact</a>
           </div>
 
           {/* Contact Info */}

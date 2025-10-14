@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "../common/Header";
-import Footer from "../common/Footer";
 import "../css/index.css";
 import logo from "../assets/logo/logo.png";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-export default function Index() {
-  const services = [
+export default function Services(){
+     const services = [
     {
       title: "Web Development",
       subtitle: "Custom websites built for performance, flexibility & SEO.",
@@ -51,30 +50,9 @@ export default function Index() {
       ],
     },
   ];
-
-  return (
-    <>
-      <Header />
-
-      {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center bg-gray-50 py-20 px-4">
-        <h1 className="text-4xl md:text-5xl font-outfit font-bold mb-4">
-          Welcome to Brainlink Softwares
-        </h1>
-        <p className="font-outfit text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-8 max-w-xl">
-          We create innovative software solutions that help you and your business grow.
-        </p>
-        <div className="flex space-x-4">
-          <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit">
-            Contact Us
-          </button>
-          <button className="bg-gray-200 text-gray-900 font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit">
-            About Us
-          </button>
-        </div>
-      </div>
-
-      {/* Services Section */}
+    return(
+        <>
+{/* Services Section */}
       <div className=" py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-outfit font-bold text-center text-gray-900 dark:text-white mb-10">
@@ -99,8 +77,6 @@ export default function Index() {
           ))}
         </div>
       </div>
-
-      <Footer />
-    </>
-  );
+      </>
+    );
 }

@@ -7,7 +7,7 @@ import Footer from "../common/Footer";
 export default function Pricing() {
   const plans = [
     {
-       title: "Sites@299",
+       title: "Sites@299*",
       subtitle: "Get your landing page live today",
       price: "₹299",
       color: "from-blue-900 to-gray-800",
@@ -18,7 +18,7 @@ export default function Pricing() {
       ],
     },
     {
-      title: "Launch Plan",
+      title: "Launch Plan*",
       subtitle: "Perfect for startups & small businesses",
       price: "₹499 – ₹999",
       color: "from-blue-600 to-blue-800",
@@ -31,7 +31,7 @@ export default function Pricing() {
       ],
     },
     {
-      title: "Boost Plan",
+      title: "Boost Plan*",
       subtitle: "Ideal for growing brands",
       price: "₹1,499 – ₹2,499",
       color: "from-green-600 to-green-800",
@@ -44,7 +44,7 @@ export default function Pricing() {
       ],
     },
     {
-      title: "Scale Plan",
+      title: "Scale Plan*",
       subtitle: "For established companies ready to expand",
       price: "₹2,999 – ₹4,999",
       color: "from-purple-600 to-purple-800",
@@ -57,7 +57,7 @@ export default function Pricing() {
       ],
     },
     {
-      title: "ShopPro Plan",
+      title: "ShopPro Plan*",
       subtitle: "E-commerce websites made simple",
       price: "₹5,999 – ₹9,999",
       color: "from-pink-600 to-pink-800",

@@ -7,7 +7,7 @@ export default function Contacts(){
         <>
         <div className="flex flex-col bg-gray-50 justify-center items-center p-8">
             <h1 className="text-4xl font-outfit font-bold">Contact Us</h1>
-            <div className="flex flex-col justify-start items-start m-10 bg-gradient-to-r from-blue-600 to-blue-900 p-10 w-1/2 h-auto rounded-md">             
+            <div className="flex flex-col justify-start items-start m-10 bg-gradient-to-r from-blue-600 to-blue-900 p-10 h-auto rounded-md">             
                     <img src={logo} className="w-8 bg-white p-2 rounded-2xl"></img>
             <div className="flex flex-row justify-center items-center">
                <i className="fas fa-location-dot text-white m-4"></i>

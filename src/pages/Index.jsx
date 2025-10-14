@@ -65,10 +65,10 @@ export default function Index() {
           We create innovative software solutions that help you and your business grow.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition">
+          <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition font-outfit">
             Contact Us
           </button>
-          <button className="bg-gray-200 text-gray-900 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition">
+          <button className="bg-gray-200 text-gray-900 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 font-outfit">
             About Us
           </button>
         </div>
@@ -84,7 +84,7 @@ export default function Index() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`rounded-lg p-6 mb-8 bg-gradient-to-r ${service.color} text-white shadow-md`}
+              className={`rounded-lg p-6 mb-8 bg-gradient-to-r ${service.color} text-white shadow-md hover:scale-105 transition transform`}
             >
               <img src={logo} className="w-10 bg-white rounded-3xl p-2" />
 

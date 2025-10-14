@@ -19,7 +19,7 @@ export default function Pricing() {
     {
       title: "Ignite*",
       subtitle: "Spark your business growth with a full website and essential tools.",
-      price: "₹1,499 - ₹1,999",
+      price: "₹1,999",
       color: "from-blue-600 to-blue-800",
       features: [
         "1–5 Page Responsive Website",
@@ -32,7 +32,7 @@ export default function Pricing() {
     {
       title: "Momentum*",
       subtitle: "Fuel your brand’s growth with custom designs and marketing power.",
-      price: "₹2,499 – ₹2,999",
+      price: "₹2,999",
       color: "from-green-600 to-green-800",
       features: [
         "Custom Website (up to 10 Pages)",
@@ -45,7 +45,7 @@ export default function Pricing() {
     {
       title: "Velocity*",
       subtitle: "Accelerate your established business with advanced strategy and analytics.",
-      price: "₹3,499 – ₹5,999",
+      price: "₹4,999",
       color: "from-purple-600 to-purple-800",
       features: [
         "Advanced Website",

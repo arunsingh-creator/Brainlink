@@ -3,7 +3,8 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 import "../css/index.css";
 import logo from "../assets/logo/logo.png";
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default function Index() {
   const services = [
     {
@@ -65,9 +66,9 @@ export default function Index() {
           We create innovative software solutions that help you and your business grow.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit">
-            Contact Us
-          </button>
+          <Link to="/contact" className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit inline-block text-center">
+           Contact Us
+          </Link>
           <button className="bg-gray-200 text-gray-900 font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit">
             About Us
           </button>

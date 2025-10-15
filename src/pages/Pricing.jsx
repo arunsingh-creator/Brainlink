@@ -75,11 +75,11 @@ export default function Pricing() {
       <Header />
 
       {/* Hero Section */}
-      <div className="flex flex-col items-center bg-gray-50 dark:bg-gray-900 py-20 px-4">
-        <h1 className="text-4xl md:text-5xl font-outfit font-bold text-gray-900 dark:text-white mb-6">
+      <div className="flex flex-col items-center bg-gray-50 ">
+        <h1 className="text-4xl md:text-5xl font-outfit font-bold text-gray-900 ">
           Pricing Plans
         </h1>
-        <p className="text-gray-500 dark:text-gray-400 mb-12 text-center max-w-2xl">
+        <p className="text-gray-500 mb-12 text-center max-w-2xl">
           Flexible pricing plans built for every business stage — from startups to enterprises.
         </p>
 

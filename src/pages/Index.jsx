@@ -69,9 +69,9 @@ export default function Index() {
           <Link to="/contact" className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit inline-block text-center">
            Contact Us
           </Link>
-          <button className="bg-gray-200 text-gray-900 font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit">
-            About Us
-          </button>
+          <Link to="/pricing" className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:scale-105 transition font-outfit inline-block text-center">
+            Our Pricing
+          </Link>
         </div>
       </div>
 

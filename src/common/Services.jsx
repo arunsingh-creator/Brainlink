@@ -55,7 +55,7 @@ export default function Services(){
 {/* Services Section */}
       <div className=" py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-outfit font-bold text-center text-gray-900">
+          <h2 className="text-3xl font-outfit font-bold text-center text-gray-900 mb-10">
             Our Services
           </h2>
 

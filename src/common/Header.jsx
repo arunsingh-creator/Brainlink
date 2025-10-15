@@ -11,7 +11,7 @@ export default function Header() {
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-8" alt="Brainlink Software" />
-          <span className="self-center text-1xl font-outfit font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-1xl font-outfit font-semibold whitespace-nowrap">
             Brainlink Softwares
           </span>
         </a>

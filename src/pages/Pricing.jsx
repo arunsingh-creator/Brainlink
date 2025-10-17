@@ -118,11 +118,8 @@ export default function Pricing() {
 
               {/* Bottom-aligned Proceed Button */}
               <div className="mt-auto">
-                <Link
-                  key={`btn-${plan.id}`}
-                  to={`/plans/${plan.id}`}
-                  className="block bg-white text-gray-900 font-semibold font-outfit w-full py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 text-center"
-                >
+                <Link key={`btn-${plan.id}`} to={`/pricing/${plan.id}`}  // Note the leading slash
+                className="block bg-white text-gray-900 font-semibold font-outfit w-full py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 text-center">
                   Proceed
                 </Link>
               </div>

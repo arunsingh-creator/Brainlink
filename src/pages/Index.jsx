@@ -62,7 +62,7 @@ export default function Index() {
         <h1 className="text-4xl md:text-5xl font-outfit font-bold mb-4">
           Welcome to Brainlink Softwares
         </h1>
-        <p className="font-outfit text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-8 max-w-xl">
+        <p className="font-outfit text-gray-700 text-lg md:text-xl mb-8 max-w-xl">
           We create innovative software solutions that help you and your business grow.
         </p>
         <div className="flex space-x-4">

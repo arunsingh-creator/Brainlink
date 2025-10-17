@@ -3,22 +3,23 @@ import "../css/index.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   const plans = [
     {
-       title: "Sites@999*",
+      id: "sites999",
+      title: "Sites@999*",
       subtitle: "Get your landing page live today",
       price: "₹999",
       color: "from-blue-900 to-gray-800",
-        features: [
-        "Single Landing Page Design",
-        "Basic SEO Setup"
-      ],
+      features: ["Single Landing Page Design", "Basic SEO Setup"],
     },
     {
+      id: "ignite",
       title: "Ignite*",
-      subtitle: "Spark your business growth with a full website and essential tools.",
+      subtitle:
+        "Spark your business growth with a full website and essential tools.",
       price: "₹1,999",
       color: "from-blue-600 to-blue-800",
       features: [
@@ -30,8 +31,10 @@ export default function Pricing() {
       ],
     },
     {
+      id: "momentum",
       title: "Momentum*",
-      subtitle: "Fuel your brand’s growth with custom designs and marketing power.",
+      subtitle:
+        "Fuel your brand’s growth with custom designs and marketing power.",
       price: "₹2,999",
       color: "from-green-600 to-green-800",
       features: [
@@ -43,8 +46,10 @@ export default function Pricing() {
       ],
     },
     {
+      id: "velocity",
       title: "Velocity*",
-      subtitle: "Accelerate your established business with advanced strategy and analytics.",
+      subtitle:
+        "Accelerate your established business with advanced strategy and analytics.",
       price: "₹4,999",
       color: "from-purple-600 to-purple-800",
       features: [
@@ -55,19 +60,20 @@ export default function Pricing() {
         "Performance Analytics Dashboard",
       ],
     },
-   {
-  title: "Custom Plan — TailorMade*",
-  subtitle: "Get a plan built just for your unique needs.",
-  price: "Custom Pricing",
-  color: "from-pink-600 to-pink-800",
-  features: [
-    "Custom Website Development & Design",
-    "Flexible Feature Integration Based on Your Requirements",
-    "SEO & Performance Optimization",
-    "Marketing Automation & Campaign Setup",
-    "Scalable Solutions Tailored to Your Business",
-  ]
-},
+    {
+      id: "custom",
+      title: "Custom Plan — TailorMade*",
+      subtitle: "Get a plan built just for your unique needs.",
+      price: "Custom Pricing",
+      color: "from-pink-600 to-pink-800",
+      features: [
+        "Custom Website Development & Design",
+        "Flexible Feature Integration Based on Your Requirements",
+        "SEO & Performance Optimization",
+        "Marketing Automation & Campaign Setup",
+        "Scalable Solutions Tailored to Your Business",
+      ],
+    },
   ];
 
   return (
@@ -75,23 +81,31 @@ export default function Pricing() {
       <Header />
 
       {/* Hero Section */}
-      <div className="flex flex-col items-center bg-gray-50 ">
+      <div className="flex flex-col items-center bg-gray-50 min-h-screen">
         <h1 className="text-4xl md:text-5xl font-outfit font-bold text-gray-900 p-8">
           Pricing Plans
         </h1>
         <p className="text-gray-500 mb-12 text-center max-w-2xl font-outfit">
-          Flexible pricing plans built for every business stage — from startups to enterprises.
+          Flexible pricing plans built for every business stage — from startups
+          to enterprises.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8">
-          {plans.map((plan, index) => (
+        {/* Pricing Cards */}
+        <div className="flex flex-wrap justify-center gap-8 pb-24">
+          {plans.map((plan) => (
             <div
-              key={index}
-              className={`flex flex-col bg-gradient-to-b ${plan.color} text-white p-8 rounded-2xl w-80 shadow-lg hover:scale-105 transition transform`}
+              key={plan.id}
+              className={`flex flex-col bg-gradient-to-b ${plan.color} text-white p-8 rounded-2xl w-80 shadow-lg hover:scale-105 transition-transform`}
             >
-              <h2 className="text-2xl font-outfit font-bold mb-1">{plan.title}</h2>
-              <p className="text-sm text-gray-200 mb-3 font-outfit">{plan.subtitle}</p>
-              <p className="text-3xl font-outfit mb-6 text-yellow-300">{plan.price}</p>
+              <h2 className="text-2xl font-outfit font-bold mb-1">
+                {plan.title}
+              </h2>
+              <p className="text-sm text-gray-200 mb-3 font-outfit">
+                {plan.subtitle}
+              </p>
+              <p className="text-3xl font-outfit mb-6 text-yellow-300">
+                {plan.price}
+              </p>
 
               <ul className="space-y-2 font-outfit mb-6">
                 {plan.features.map((feature, i) => (
@@ -102,11 +116,15 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              {/* Button fixed at bottom */}
+              {/* Bottom-aligned Proceed Button */}
               <div className="mt-auto">
-                <button className="bg-white text-gray-900 font-semibold w-full py-2 rounded-lg hover:bg-gray-200 transition font-outfit">
+                <Link
+                  key={`btn-${plan.id}`}
+                  to={`/plans/${plan.id}`}
+                  className="block bg-white text-gray-900 font-semibold font-outfit w-full py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 text-center"
+                >
                   Proceed
-                </button>
+                </Link>
               </div>
             </div>
           ))}
